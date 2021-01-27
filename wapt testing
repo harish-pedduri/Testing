@@ -1,0 +1,53 @@
+
+
+Burp suite fire fox browser setup lab
+To  stop errors and info
+About: config
+Dataporting.policy.datasubmission enabled ---- false
+Data porting.healtreport.uploadenabled-----false 
+Toolkit.telemetry.unified----false
+Dom.push.enabled
+Dom.push.connection.enabled
+Note: double click on it
+
+Stop CAPITIVE portal check 
+Network.captive-portal-service.enabled----false
+    
+
+Firefox optional-2
+About:config
+Stop below services by searching and double clicking
+	services.sync.prefs.sync.browser.safebrowsing.malware.enabled
+	browser.safebrowsing.malware.enabled
+	browser.safebrowsing.phising.enabled
+	browser.safebrowsing.downlaods.enabled
+To stop the auto updates, serach for “update.enabled” and double click all the results
+	app.update.enabled
+	extension. Update.enabled
+	lightweighthemes.update.enabled
+	services.sync.prefs.sync.extension.update.enabled
+	services.blocklist.update_enabled
+Owasp top10 
+Injections
+Os command injection
+Possible areas to try command injection
+Command execution such as ping , ps , system info , uname in windows operating system
+File operations:  creation , deletion , rename , move , copy
+Server network-ip/os/neststat
+Hardware informetion
+1.    ;       &&      windows Linux 
+2.      ip       ||         path cmd           |                win Linux
+3.   \n ( %0a)                    $ ‘        ‘    Linux
+Remediation input sanitization special char 
+Sql injection & X path injection   
+ (pen test monkey.net  cheat sheet)  
+Error based sql injection
+If web root directory will disclosed it is also low level venerability 
+Detection   ‘         %27        “            %22        #   %23               ;  %3B    )     (4-2)    (2+5)  -- wild card *
+
+
+
+
+
+
+
